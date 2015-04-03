@@ -1,0 +1,9 @@
+- name: "Joe - CEO"
+  picture: 'CEO.png'
+  bio: "Joe is an old chap he has been surfing since the age of twelve"
+- name: "Jack - CTO"
+  picture: 'intern1.png'
+  bio: "Jack is stupid but nice, he doesn't surf at all but likes watching"
+- name: "Rodolf - CFO"
+  picture: 'intern2.png'
+  bio: "Rodolf likes to party, to stare at women, to smoke cigars and to drink"

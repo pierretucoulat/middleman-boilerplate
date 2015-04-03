@@ -57,5 +57,24 @@
     </nav>
 
     <%= yield %>
+    <!-- Footer -->
+    <div class="footer-bg">
+      <div class="container-fluid">
+        <div class="text-center">
+          <p><br>Follow us</p>
+        </div>
+        <div class="row text-center row-padding" id="social-size">
+          <div class="col-xs-4">
+            <%= link_to "", "http://www.facebook.com", class: "fa fa-facebook-square footer-link" %>
+          </div>
+          <div class="col-xs-4">
+            <%= link_to "", "http://www.twitter.com", class: "fa fa-twitter-square footer-link" %>
+          </div>
+          <div class="col-xs-4">
+            <%= link_to "", "http://www.instagram.com", class: "fa fa-instagram footer-link" %>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

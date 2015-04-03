@@ -2,8 +2,6 @@
 title: Shaper Joe
 ---
 
-!-- .welcome -->
-
 <body>
 
   <div id="banner">
@@ -48,19 +46,19 @@ title: Shaper Joe
   <div class="container-fluid">
     <div class="row text-center padded">
       <div class= "col-xs-4">
-        <%= image_tag "performanceboard.png", id: "img-reduce" %>
+        <%= image_tag "performanceboard.png", class: "img-reduce" %>
         <h3>High velocity shapes</h3>
         <p>You will surf like never before !
           All pro surfer use our boards and go faster.</p>
       </div>
       <div class= "col-xs-4">
-        <%= image_tag "retroshape.png", id: "img-reduce"%>
+        <%= image_tag "retroshape.png", class: "img-reduce"%>
         <h3>Retro Boards</h3>
         <p>wood, epoxy, plastic, we have it all !
           Just talk to shaper Joe and he will design you one !</p>
       </div>
       <div class= "col-xs-4">
-        <%= image_tag "map.png", id: "img-reduce" %>
+          <%= image_tag "map.png", class: "img-reduce" %>
         <h3>Delivered at your home</h3>
         <p>Free delivery accross the United States !
           Whether you are in New York or at Atlanta order without fees.</p>
@@ -109,24 +107,7 @@ title: Shaper Joe
     });
   </script>
   <!-- Footer -->
-  <div class="footer-bg">
-    <div class="container">
-      <div class="text-center">
-        <p><br>Follow us</p>
-      </div>
-      <div class="row text-center row-padding" id="social-size">
-        <div class="col-xs-4">
-          <%= link_to "", "http://www.facebook.com", class: "fa fa-facebook-square footer-link" %>
-        </div>
-        <div class="col-xs-4">
-          <%= link_to "", "http://www.twitter.com", class: "fa fa-twitter-square footer-link" %>
-        </div>
-        <div class="col-xs-4">
-          <%= link_to "", "http://www.instagram.com", class: "fa fa-instagram footer-link" %>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
