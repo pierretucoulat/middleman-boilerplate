@@ -1,1 +1,25 @@
 // Your footer style
+#social-size{
+  font-size: 35px;
+}
+.footer-bg {
+  background: $gray-dark;
+  color:white;
+}
+
+.footer-padded {
+  padding: 70px;
+
+}
+
+.footer-link {
+  color: white;
+  transition: all 0.3s ease;
+
+  &:hover{
+    text-shadow: 0px 0px 5px white;
+    transform: scale(1.2) rotate(360deg);
+    text-decoration: none;
+    color: white;
+  }
+}

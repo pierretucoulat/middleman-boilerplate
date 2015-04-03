@@ -4,8 +4,8 @@
  * Feel free to change them and create your own
  * ------------------------------------- */
 .padded {
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 .bg-red {
   background: $red;
@@ -30,4 +30,19 @@
 .bg-purple {
   background: $purple;
   color: white;
+}
+
+#img-reduce{
+  height: 100px;
+}
+
+.margin-top{
+  margin-top: 40px;
+}
+
+.margin-right{
+  margin-right: 150px;
+}
+.row-padding{
+  padding: 70px;
 }

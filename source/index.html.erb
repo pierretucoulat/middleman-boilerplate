@@ -1,10 +1,133 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Shaper Joe
 ---
 
-<div class="welcome text-center padded">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+!-- .welcome -->
+
+<body>
+
+  <div id="banner">
+    <div class="container">
+      <div class='text-left'>
+        <h1>Shaper Joe</h1>
+        <div class="text-white">
+          <h3>The best handmade shapes <br>
+            of the entire East coast</h3>
+        </div>
+        <div class="margin-top">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Check the latest arrivals
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Latests arrivals</h4>
+                </div>
+                <div class="modal-body">
+                  we don't have the right to give you photos
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  <%= link_to "check out our Instagram", "http://www.instagram.com", class: "btn btn-primary" %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal end -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row text-center padded">
+      <div class= "col-xs-4">
+        <%= image_tag "performanceboard.png", id: "img-reduce" %>
+        <h3>High velocity shapes</h3>
+        <p>You will surf like never before !
+          All pro surfer use our boards and go faster.</p>
+      </div>
+      <div class= "col-xs-4">
+        <%= image_tag "retroshape.png", id: "img-reduce"%>
+        <h3>Retro Boards</h3>
+        <p>wood, epoxy, plastic, we have it all !
+          Just talk to shaper Joe and he will design you one !</p>
+      </div>
+      <div class= "col-xs-4">
+        <%= image_tag "map.png", id: "img-reduce" %>
+        <h3>Delivered at your home</h3>
+        <p>Free delivery accross the United States !
+          Whether you are in New York or at Atlanta order without fees.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Features -->
+  <div class="bg-blue">
+    <div class="container">
+      <div class="row text-center row-padding">
+        <h3> Free updates on our latest shapes</h3>
+        <p>Subscribe now !</p>
+        <form action="/" class="form-inline">
+          <input type="email" class="form-control" placeholder="jimroberts@gmail.com">
+          <input type="submit" value="Apply" class="btn btn-primary">
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Map -->
+  <div class="text-center">
+    <h4>Check out our shop</h4>
+  </div>
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(55.75393,37.620795);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [[{"featureType":"water","stylers":[{"saturation":43},{"lightness":-11},{"hue":"#0088ff"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"hue":"#ff0000"},{"saturation":-100},{"lightness":99}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"color":"#808080"},{"lightness":54}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#ece2d9"}]},{"featureType":"poi.park","elementType":"geometry.fill","stylers":[{"color":"#ccdca1"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#767676"}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#b8cb93"}]},{"featureType":"poi.park","stylers":[{"visibility":"on"}]},{"featureType":"poi.sports_complex","stylers":[{"visibility":"on"}]},{"featureType":"poi.medical","stylers":[{"visibility":"on"}]},{"featureType":"poi.business","stylers":[{"visibility":"simplified"}]}]] // TODO: replace [] by array from https://snazzymaps.com/
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "Our shop is here!"
+    });
+  </script>
+  <!-- Footer -->
+  <div class="footer-bg">
+    <div class="container">
+      <div class="text-center">
+        <p><br>Follow us</p>
+      </div>
+      <div class="row text-center row-padding" id="social-size">
+        <div class="col-xs-4">
+          <%= link_to "", "http://www.facebook.com", class: "fa fa-facebook-square footer-link" %>
+        </div>
+        <div class="col-xs-4">
+          <%= link_to "", "http://www.twitter.com", class: "fa fa-twitter-square footer-link" %>
+        </div>
+        <div class="col-xs-4">
+          <%= link_to "", "http://www.instagram.com", class: "fa fa-instagram footer-link" %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
