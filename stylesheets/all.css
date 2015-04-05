@@ -3414,23 +3414,23 @@ select[multiple].input-lg,
 /* line 67, /Users/pierretucoulat/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-success {
   color: #fff;
-  background-color: #32B796;
-  border-color: #2da386; }
+  background-color: #2D3542;
+  border-color: #232933; }
   /* line 11, /Users/pierretucoulat/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     color: #fff;
-    background-color: #278f75;
-    border-color: #1f735e; }
+    background-color: #181d24;
+    border-color: #0a0c0e; }
   /* line 21, /Users/pierretucoulat/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     background-image: none; }
   /* line 29, /Users/pierretucoulat/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
-    background-color: #32B796;
-    border-color: #2da386; }
+    background-color: #2D3542;
+    border-color: #232933; }
   /* line 40, /Users/pierretucoulat/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_buttons.scss */
   .btn-success .badge {
-    color: #32B796;
+    color: #2D3542;
     background-color: #fff; }
 
 /* line 71, /Users/pierretucoulat/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_buttons.scss */
@@ -4930,10 +4930,10 @@ a.label:hover, a.label:focus {
 
 /* line 52, /Users/pierretucoulat/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_labels.scss */
 .label-success {
-  background-color: #32B796; }
+  background-color: #2D3542; }
   /* line 7, /Users/pierretucoulat/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_labels.scss */
   .label-success[href]:hover, .label-success[href]:focus {
-    background-color: #278f75; }
+    background-color: #181d24; }
 
 /* line 56, /Users/pierretucoulat/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_labels.scss */
 .label-info {
@@ -5203,7 +5203,7 @@ a.thumbnail.active {
 
 /* line 73, /Users/pierretucoulat/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_progress-bars.scss */
 .progress-bar-success {
-  background-color: #32B796; }
+  background-color: #2D3542; }
   /* line 7, /Users/pierretucoulat/.rbenv/versions/2.2.0/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/mixins/_progress-bar.scss */
   .progress-striped .progress-bar-success {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -8898,6 +8898,14 @@ button.close {
 .fa-meanpath:before {
   content: ""; }
 
+/* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_banner.css.scss */
+.banner-style {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-position: center center;
+  min-height: 527px;
+  color: #eeeeee; }
+
 /* -------------------------------------
  * Base elements style (h1, h2, p, a, ul..)
  * ============= IMPORTANT =============
@@ -8915,7 +8923,7 @@ button.close {
 
 /* line 10, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_footer.css.scss */
 .footer-padded {
-  padding: 70px; }
+  padding: 20px; }
 
 /* line 15, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_footer.css.scss */
 .footer-link {
@@ -8972,7 +8980,7 @@ button.close {
   /* line 65, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .navbar-nav > li > a:hover,
   .navbar-wagon .navbar-nav > .open > a:hover {
-    color: #FDB631;
+    color: #677fe0;
     background-color: transparent; }
   /* line 71, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .navbar-brand,
@@ -8996,7 +9004,7 @@ button.close {
       background-color: #1d3491; }
   /* line 93, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .navbar-brand img, .navbar-wagon .navbar-brand svg {
-    height: 50px;
+    height: 80px;
     padding: 0px; }
   /* line 98, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_navbar.css.scss */
   .navbar-wagon .img-avatar {
@@ -9099,30 +9107,43 @@ button.close {
 .clear {
   clear: both; }
 
-/* line 53, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_utilities.css.scss */
-.img-reduce {
-  height: 125px; }
-
 /* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_contact.css.scss */
 .contact-picture {
   height: 50px; }
 
+/* line 3, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_img.css.scss */
+.img-hover:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1); }
+
+/* line 9, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_img.css.scss */
+.img-reduce {
+  height: 125px; }
+
+/* line 15, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_img.css.scss */
+.img-big-hover:hover {
+  transition: all 0.8s ease;
+  transform: scale(1.8) rotate(90deg); }
+
+/* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_boards.css.scss */
+#banner-bg-boards {
+  background-image: url("../images/backgroundboards.png"); }
+
+/* line 5, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_boards.css.scss */
+#img-board-reduce {
+  height: 285px; }
+
 /* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_contactpage.css.scss */
-#banner2 {
-  background-image: url("../images/background.png");
-  padding-top: 100px;
-  padding-bottom: 200px;
-  background-position: center center;
-  min-height: 537px;
-  color: #eeeeee; }
+#banner-bg-contact {
+  background-image: url("../images/background.png"); }
+
+/* line 5, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_contactpage.css.scss */
+.contact-picture {
+  height: 50px; }
 
 /* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_home.css.scss */
-#banner {
-  background-image: url("../images/background.png");
-  padding-top: 100px;
-  padding-bottom: 200px;
-  background-position: center center;
-  color: #eeeeee; }
+#banner-bg-home {
+  background-image: url("../images/background.png"); }
 
 /*
 ==============================================
@@ -9712,8 +9733,8 @@ pullUp
 .pullUp {
   animation-name: pullUp;
   -webkit-animation-name: pullUp;
-  animation-duration: 1.1s;
-  -webkit-animation-duration: 1.1s;
+  animation-duration: 3.1s;
+  -webkit-animation-duration: 3.1s;
   animation-timing-function: ease-out;
   -webkit-animation-timing-function: ease-out;
   transform-origin: 50% 100%;
