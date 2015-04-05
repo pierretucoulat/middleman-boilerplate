@@ -11,6 +11,9 @@
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
+    <title>My Now Amazing Webpage</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
 
   <body class="<%= page_classes %>">
@@ -34,8 +37,8 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <% link_to "/pricing.html" do %>
-                <i class="fa fa-dollar"></i> Pricing
+              <% link_to "/boards.html" do %>
+                <i class="fa fa-anchor"></i> Boards
               <% end %>
             </li>
             <li>
@@ -58,12 +61,12 @@
 
     <%= yield %>
     <!-- Footer -->
-    <div class="footer-bg">
+    <div class="footer-bg footer-padded">
       <div class="container-fluid">
         <div class="text-center">
           <p><br>Follow us</p>
         </div>
-        <div class="row text-center row-padding" id="social-size">
+        <div class="row text-center footer-padded" id="social-size">
           <div class="col-xs-4">
             <%= link_to "", "http://www.facebook.com", class: "fa fa-facebook-square footer-link" %>
           </div>

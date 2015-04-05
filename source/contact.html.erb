@@ -1,7 +1,7 @@
 ---
 title: Contact
 ---
-  <div id="banner2">
+  <div class="banner-style" id= "banner-bg-contact">
     <div class="container">
       <div class='text-left'>
       </div>
@@ -16,20 +16,22 @@ title: Contact
   </div>
 </div>
 <div class="wrapper">
-  <div class="container">
-    <div class="row text-center">
-      <div class="padded">
-        <h3>Our team<br></br></h3>
-        <% data.employees.each do |employee| %>
-          <div class="col-xs-4">
+  <div class="container-fluid text-center">
+    <h3>Our team</h3>
+    <div class="row padded">
+      <% data.employees.each do |employee| %>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="pullUp">
             <div id="img-reduce">
-              <%= image_tag employee.picture %>
+              <div class="img-hover">
+                <%= image_tag employee.picture %>
+              </div>
               <h4><%=employee.name%></h4>
               <p><%=employee.bio%></p>
             </div>
           </div>
-        <%end%>
-      </div>
+        </div>
+      <%end%>
     </div>
   </div>
 </div>
@@ -55,6 +57,8 @@ title: Contact
     </div>
   </div>
 </div>
+
+
 
 
 

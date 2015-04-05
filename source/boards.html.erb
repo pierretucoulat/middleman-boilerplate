@@ -1,0 +1,36 @@
+---
+title: Boards
+---
+
+  <div class="banner-style" id= "banner-bg-boards">
+    <div class="container">
+      <div class='text-left'>
+      </div>
+    </div>
+    <div class="container">
+    <div class="margin-top">
+      <div class='text-left'>
+        <h1>Our selection of hand-made shapes</h1>
+        <h3>Take a look</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="text-center">
+    <h3>Our shapes</h3>
+    <div class="row padded">
+      <% data.boards.each do |board| %>
+        <div class="col-xs-12 col-sm-4">
+          <h4><%=board.brand%></h4>
+          <div class="img-big-hover">
+            <%= image_tag board.picture, id: "img-board-reduce" %>
+          </div>
+          <p><%=board.name%></p>
+          <p><%=board.bio%></p>
+          <p><span class="label label-success"><%=board.price%></span></p>
+        </div>
+      <%end%>
+    </div>
+  </div>
+</div>

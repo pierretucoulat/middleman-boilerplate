@@ -1,0 +1,15 @@
+- name: "longboard 10"
+  brand: "Al merrick"
+  picture: 'surf1.png'
+  bio: "Ideal for beginners this board is not too heavy"
+  price: "255 dollars"
+- name: "longboard 11"
+  brand: "Lost"
+  picture: 'surf2.png'
+  bio: "Only pros can handle the speed of this board, very powerful"
+  price: "126 dollars"
+- name: "longboard 8"
+  brand: "Bic"
+  picture: 'surf3.png'
+  bio: "Kelly Slater uses this one for flat days "
+  price: "438 dollars"

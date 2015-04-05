@@ -1,0 +1,20 @@
+.img-hover{
+
+  &:hover{
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+}
+
+.img-reduce{
+  height:125px;
+}
+
+.img-big-hover{
+
+  &:hover{
+  transition: all 0.8s ease;
+  transform: scale(1.8) rotate(90deg);
+}
+}
+

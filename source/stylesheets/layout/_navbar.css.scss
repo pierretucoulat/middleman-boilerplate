@@ -2,7 +2,7 @@
  * Colors & Fonts
  * ------------------------------------- */
 $navbar-color: black;
-$navbar-hover-color: $yellow;
+$navbar-hover-color: $darkblue;
 $navbar-font-family: $header-font;
 $navbar-bg: white;
 
@@ -90,7 +90,7 @@ $navbar-profile-border-width: 2px;
   }
 
   .navbar-brand img, .navbar-brand svg {
-    height: $navbar-height;
+    height: 80px;
     padding: 0px;
   }
 
