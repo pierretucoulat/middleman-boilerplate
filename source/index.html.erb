@@ -2,71 +2,81 @@
 title: Shaper Joe
 ---
 
-<body>
+
 
   <div class="banner-style" id= "banner-bg-home">
     <div class="container">
       <div class='text-left'>
-        <h1>Shaper Joe</h1>
-        <div class="text-white">
-          <h3>The best handmade shapes <br>
-            of the entire East coast</h3>
-        </div>
-        <div class="margin-top">
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-            Check the latest arrivals
-          </button>
+        <div class="text-header">
+          <div class="fadeInAndSlideDown">
+            <h1>Shaper Joe</h1>
+            <div class="text-white">
+              <h3>The best handmade shapes <br>
+                of the entire East coast</h3>
+            </div>
+            <div class="margin-top">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Check the latest arrivals
+              </button>
+            </div>
+          </div>
 
-          <!-- Modal -->
-          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="myModalLabel">Latests arrivals</h4>
-                </div>
-                <div class="modal-body">
-                  we don't have the right to give you photos
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <%= link_to "check out our Instagram", "http://www.instagram.com", class: "btn btn-primary" %>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Latests arrivals</h4>
+                  </div>
+                  <div class="modal-body">
+                    we don't have the right to give you photos
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <%= link_to "check out our Instagram", "http://www.instagram.com", class: "btn btn-primary" %>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- modal end -->
           </div>
-          <!-- modal end -->
         </div>
       </div>
+      <a href="#features"> <i class="fa fa-angle-down pulse" id="scroll-btn-white"></i></a>
     </div>
   </div>
 
 
-  <div class="container-fluid">
-    <div class="row text-center padded">
-      <div class= "col-xs-12 col-sm-6 col-md-4">
-        <%= image_tag "performanceboard.png", class: "img-reduce" %>
-        <h3>High velocity shapes</h3>
-        <p>You will surf like never before !
-          All pro surfer use our boards and go faster.</p>
+
+  <div class="container-fluid feature-container">
+    <!-- <div id="features"> -->
+      <div class="row text-center padded" id="features">
+        <div class= "col-xs-12 col-sm-6 col-md-4">
+          <%= image_tag "performanceboard.png", class: "img-reduce" %>
+          <h3>High velocity shapes</h3>
+          <p>You will surf like never before !
+            All pro surfer use our boards and go faster.</p>
+        </div>
+        <div class= "col-xs-12 col-sm-6 col-md-4">
+          <%= image_tag "retroshape.png", class: "img-reduce"%>
+          <h3>Retro Boards</h3>
+          <p>wood, epoxy, plastic, we have it all !
+            Just talk to shaper Joe and he will design you one !</p>
+        </div>
+        <div class= "col-xs-12 col-sm-6 col-md-4">
+            <%= image_tag "map.png", class: "img-reduce" %>
+          <h3>Delivered at your home</h3>
+          <p>Free delivery accross the United States !
+            Whether you are in New York or at Atlanta order without fees.</p>
+        </div>
       </div>
-      <div class= "col-xs-12 col-sm-6 col-md-4">
-        <%= image_tag "retroshape.png", class: "img-reduce"%>
-        <h3>Retro Boards</h3>
-        <p>wood, epoxy, plastic, we have it all !
-          Just talk to shaper Joe and he will design you one !</p>
-      </div>
-      <div class= "col-xs-12 col-sm-6 col-md-4">
-          <%= image_tag "map.png", class: "img-reduce" %>
-        <h3>Delivered at your home</h3>
-        <p>Free delivery accross the United States !
-          Whether you are in New York or at Atlanta order without fees.</p>
-      </div>
-    </div>
+    <!-- </div> -->
+    <a href="#newsletter"> <i class="fa fa-angle-down pulse" id="scroll-btn-blue"></i></a>
   </div>
-  <!-- Features -->
-  <div class="bg-blue">
+    <!-- Features -->
+  <div class="bg-blue" id="newsletter">
     <div class="container">
       <div class="row text-center row-padding">
         <h3> Free updates on our latest shapes</h3>
@@ -79,6 +89,7 @@ title: Shaper Joe
     </div>
   </div>
   </div>
+
 
   <!-- Map -->
   <div class="text-center">
@@ -111,4 +122,5 @@ title: Shaper Joe
   <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-</body>
+
+
