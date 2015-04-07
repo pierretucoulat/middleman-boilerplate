@@ -8953,7 +8953,7 @@ button.close {
  * ------------------------------------- */
 /* line 38, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_navbar.css.scss */
 .navbar-wagon {
-  background: white;
+  background: Transparent;
   font-family: "Titillium Web", "Ultralight";
   border: none;
   font-weight: 400;
@@ -9111,6 +9111,48 @@ button.close {
 .contact-picture {
   height: 50px; }
 
+@keyframes fadeInAndSlideDown {
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+    transform: translateY(-20%);
+    /* start CSS properties */ }
+  100% {
+    transform: translateY(0%);
+    -webkit-transform: scale(1);
+    opacity: 1;
+    /* end CSS properties */ } }
+@-webkit-keyframes fadeInHome {
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+    transform: translateY(-20%);
+    /* start CSS properties */ }
+  100% {
+    transform: translateY(0%);
+    -webkit-transform: scale(1);
+    opacity: 1;
+    /* end CSS properties */ } }
+@-moz-keyframes fadeInHome {
+  0% {
+    transform: scale(0);
+    opacity: 0.0;
+    transform: translateY(-20%);
+    /* start CSS properties */ }
+  100% {
+    transform: translateY(0%);
+    -webkit-transform: scale(1);
+    opacity: 1;
+    /* end CSS properties */ } }
+/* line 49, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_fadeintitle.css.scss */
+.fadeInAndSlideDown {
+  transform: scale(0);
+  opacity: 0.0;
+  transform: translateY(-50%);
+  animation: fadeInAndSlideDown 2s 0.5s ease forwards;
+  -webkit-animation: fadeInHome 2s 0.5s ease forwards;
+  -moz-animation: fadeInHome 2s 0.5s ease forwards; }
+
 /* line 3, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_img.css.scss */
 .img-hover:hover {
   transition: all 0.3s ease;
@@ -9124,6 +9166,63 @@ button.close {
 .img-big-hover:hover {
   transition: all 0.8s ease;
   transform: scale(1.8) rotate(90deg); }
+
+/* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_scroll_button.css.scss */
+#scroll-btn-white {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  bottom: 0px; }
+
+/* line 13, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_scroll_button.css.scss */
+#scroll-btn-blue {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  font-size: 60px;
+  color: #2D3542;
+  bottom: 0px; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7; }
+  50% {
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7; } }
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7; }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7; } }
+@-moz-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7; }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7; } }
+/* line 71, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_scroll_button.css.scss */
+.pulse {
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite; }
 
 /* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_boards.css.scss */
 #banner-bg-boards {
@@ -9143,7 +9242,16 @@ button.close {
 
 /* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_home.css.scss */
 #banner-bg-home {
+  position: relative;
   background-image: url("../images/background.png"); }
+
+/* line 10, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_home.css.scss */
+.text-header {
+  margin-top: 270px; }
+
+/* line 14, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_home.css.scss */
+.feature-container {
+  position: relative; }
 
 /*
 ==============================================
