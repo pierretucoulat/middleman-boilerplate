@@ -9,15 +9,20 @@ title: Boards
     </div>
     <div class="container">
     <div class="margin-top">
-      <div class='text-left'>
-        <h1>Our selection of hand-made shapes</h1>
-        <h3>Take a look</h3>
+      <div class="text-header">
+        <div class='text-left'>
+          <div class="fadeInAndSlideDown">
+            <h1>Our selection of hand-made shapes</h1>
+            <h3>Take a look</h3>
+          </div>
+        </div>
       </div>
     </div>
+    <a href="#boards"> <i class="fa fa-angle-down pulse" id="scroll-btn-white"></i></a>
   </div>
 </div>
 <div class="container">
-  <div class="text-center">
+  <div class="text-center"id="boards">
     <h3>Our shapes</h3>
     <div class="row padded">
       <% data.boards.each do |board| %>
