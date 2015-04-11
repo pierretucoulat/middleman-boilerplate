@@ -8904,7 +8904,7 @@ button.close {
   padding-bottom: 200px;
   background-position: center center;
   min-height: 527px;
-  color: #eeeeee; }
+  color: #181c23; }
 
 /* -------------------------------------
  * Base elements style (h1, h2, p, a, ul..)
@@ -9106,6 +9106,14 @@ button.close {
 /* line 49, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_utilities.css.scss */
 .clear {
   clear: both; }
+
+/* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_button.css.scss */
+.btn-header {
+  border-color: #181c23;
+  background-color: transparent; }
+  /* line 4, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_button.css.scss */
+  .btn-header:hover {
+    color: white; }
 
 /* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_contact.css.scss */
 .contact-picture {

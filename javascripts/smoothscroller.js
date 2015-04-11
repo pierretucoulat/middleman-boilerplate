@@ -2,6 +2,13 @@ $(document).ready(function() {
   $("#banner-bg-home").css("height", $(window).height());
 });
 
+$(document).ready(function() {
+  $("#banner-bg-contact").css("height", $(window).height());
+});
+
+$(document).ready(function() {
+  $("#banner-bg-boards").css("height", $(window).height());
+});
 
 
 $(function() {
