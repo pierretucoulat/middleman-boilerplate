@@ -21,19 +21,25 @@ title: Boards
     <a href="#boards"> <i class="fa fa-angle-down pulse" id="scroll-btn-white"></i></a>
   </div>
 </div>
-<div class="container">
-  <div class="text-center"id="boards">
+<div id="boards" class="container-fluid margin-top">
+  <div class="text-center" data-sr="move 2px scale up 2%, over 1s">
+    <br></br>
     <h3>Our shapes</h3>
-    <div class="row padded">
+    <div class="row padded" style="padding-left: 80px">
       <% data.boards.each do |board| %>
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-sm-4 board-layout">
           <h4><%=board.brand%></h4>
-          <div class="img-big-hover">
-            <%= image_tag board.picture, id: "img-board-reduce" %>
+          <div>
+            <%= image_tag board.picture, id: "img-board-reduce"%>
           </div>
           <p><%=board.name%></p>
           <p><%=board.bio%></p>
-          <p><span class="label label-success"><%=board.price%></span></p>
+          <div class= "imgPrice">
+            <p><%=board.price%></p>
+            <button type="button" class="btn-board">
+                Order it
+            </button>
+          </div>
         </div>
       <%end%>
     </div>

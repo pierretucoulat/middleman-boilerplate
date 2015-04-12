@@ -4,5 +4,38 @@
 
 #img-board-reduce{
     height:285px;
+    &:hover{
+      transform: rotateY(180deg);
+      transition: all 1.5s ease;
+    }
+}
+
+.imgPrice{
+  visibility: hidden;
+}
+
+
+.board-layout{
+  background: white;
+  height: 500px;
+  width: 400px;
+  border:1px solid $lighterblue;
+  margin: 10px;
+  border-radius: 5px;
+  &:hover{
+    transition: all 1s ease;
+    transform: scale(1.01);
+    background: $darkerblue;
+    color: $white-lighter;
+    .imgPrice {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+#boards{
+  background-color: white;
+  border-color: white;
 }
 
