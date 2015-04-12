@@ -72,40 +72,99 @@
     <a href="#boards"> <i class="fa fa-angle-down pulse" id="scroll-btn-white"></i></a>
   </div>
 </div>
-<div class="container">
-  <div class="text-center"id="boards">
+<div id="boards" class="container-fluid margin-top">
+  <div class="text-center" data-sr="move 2px scale up 2%, over 1s">
+    <br></br>
     <h3>Our shapes</h3>
-    <div class="row padded">
-        <div class="col-xs-12 col-sm-4">
+    <div class="row padded" style="padding-left: 80px">
+        <div class="col-xs-12 col-sm-4 board-layout">
           <h4>Al merrick</h4>
-          <div class="img-big-hover">
+          <div>
             <img id="img-board-reduce" src="images/surf1.png" />
           </div>
           <p>longboard 10</p>
           <p>Ideal for beginners this board is not too heavy</p>
-          <p><span class="label label-success">255 dollars</span></p>
+          <div class= "imgPrice">
+            <p>255 $</p>
+            <button type="button" class="btn-board">
+                Order it
+            </button>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-sm-4 board-layout">
           <h4>Lost</h4>
-          <div class="img-big-hover">
+          <div>
             <img id="img-board-reduce" src="images/surf2.png" />
           </div>
           <p>longboard 11</p>
           <p>Only pros can handle the speed of this board, very powerful</p>
-          <p><span class="label label-success">126 dollars</span></p>
+          <div class= "imgPrice">
+            <p>126 $</p>
+            <button type="button" class="btn-board">
+                Order it
+            </button>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-sm-4 board-layout">
           <h4>Bic</h4>
-          <div class="img-big-hover">
+          <div>
             <img id="img-board-reduce" src="images/surf3.png" />
           </div>
           <p>longboard 8</p>
           <p>Kelly Slater uses this one for flat days </p>
-          <p><span class="label label-success">438 dollars</span></p>
+          <div class= "imgPrice">
+            <p>438 $</p>
+            <button type="button" class="btn-board">
+                Order it
+            </button>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 board-layout">
+          <h4>Al merrick</h4>
+          <div>
+            <img id="img-board-reduce" src="images/surf4.png" />
+          </div>
+          <p>longboard 10</p>
+          <p>Ideal for beginners this board is not too heavy</p>
+          <div class= "imgPrice">
+            <p>255 $</p>
+            <button type="button" class="btn-board">
+                Order it
+            </button>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 board-layout">
+          <h4>Lost</h4>
+          <div>
+            <img id="img-board-reduce" src="images/surf5.png" />
+          </div>
+          <p>longboard 11</p>
+          <p>Only pros can handle the speed of this board, very powerful</p>
+          <div class= "imgPrice">
+            <p>126 $</p>
+            <button type="button" class="btn-board">
+                Order it
+            </button>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 board-layout">
+          <h4>Bic</h4>
+          <div>
+            <img id="img-board-reduce" src="images/surf6.png" />
+          </div>
+          <p>longboard 8</p>
+          <p>Kelly Slater uses this one for flat days </p>
+          <div class= "imgPrice">
+            <p>438 $</p>
+            <button type="button" class="btn-board">
+                Order it
+            </button>
+          </div>
         </div>
     </div>
   </div>
 </div>
+
     <!-- Footer -->
     <div class="footer-bg footer-padded">
       <div class="container-fluid">
@@ -125,5 +184,9 @@
         </div>
       </div>
     </div>
+    <script src='/js/scrollReveal.min.js'></script>
+    <script>
+      window.sr = new scrollReveal();
+    </script>
   </body>
 </html>

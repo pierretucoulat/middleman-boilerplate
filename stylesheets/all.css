@@ -8912,6 +8912,10 @@ button.close {
  * Before writing in this file, look if there is not
  * already a Bootstrap SCSS variable that does the same job
  * ------------------------------------- */
+/* line 16, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_base.css.scss */
+body {
+  background-color: white; }
+
 /* line 2, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/layout/_footer.css.scss */
 #social-size {
   font-size: 35px; }
@@ -9115,6 +9119,13 @@ button.close {
   .btn-header:hover {
     color: white; }
 
+/* line 9, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_button.css.scss */
+.btn-board {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+  border-radius: 6px; }
+
 /* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_contact.css.scss */
 .contact-picture {
   height: 50px; }
@@ -9166,11 +9177,11 @@ button.close {
   transition: all 0.3s ease;
   transform: scale(1.1); }
 
-/* line 9, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_img.css.scss */
+/* line 10, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_img.css.scss */
 .img-reduce {
   height: 125px; }
 
-/* line 15, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_img.css.scss */
+/* line 16, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/components/_img.css.scss */
 .img-big-hover:hover {
   transition: all 0.8s ease;
   transform: scale(1.8) rotate(90deg); }
@@ -9239,6 +9250,38 @@ button.close {
 /* line 5, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_boards.css.scss */
 #img-board-reduce {
   height: 285px; }
+  /* line 7, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_boards.css.scss */
+  #img-board-reduce:hover {
+    transform: rotateY(180deg);
+    transition: all 1.5s ease; }
+
+/* line 13, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_boards.css.scss */
+.imgPrice {
+  visibility: hidden; }
+
+/* line 18, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_boards.css.scss */
+.board-layout {
+  background: white;
+  height: 500px;
+  width: 400px;
+  border: 1px solid #7488a8;
+  margin: 10px;
+  border-radius: 5px; }
+  /* line 25, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_boards.css.scss */
+  .board-layout:hover {
+    transition: all 1s ease;
+    transform: scale(1.01);
+    background: #2D3542;
+    color: #eeeeee; }
+    /* line 30, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_boards.css.scss */
+    .board-layout:hover .imgPrice {
+      visibility: visible;
+      opacity: 1; }
+
+/* line 37, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_boards.css.scss */
+#boards {
+  background-color: white;
+  border-color: white; }
 
 /* line 1, /Users/pierretucoulat/code/pierretucoulat/my_middle_man_repo/source/stylesheets/pages/_contactpage.css.scss */
 #banner-bg-contact {
